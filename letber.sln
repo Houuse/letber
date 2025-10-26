@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber", "letber\letber.csproj", "{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarmUp", "WarmUp\WarmUp.csproj", "{D0D06893-C97F-4522-8E8C-B616A9D9E756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarmUpTest", "WarmUpTest\WarmUpTest.csproj", "{B3A4D912-4973-48DA-A21A-A8D56ED29731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D06893-C97F-4522-8E8C-B616A9D9E756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D06893-C97F-4522-8E8C-B616A9D9E756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D06893-C97F-4522-8E8C-B616A9D9E756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D06893-C97F-4522-8E8C-B616A9D9E756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
