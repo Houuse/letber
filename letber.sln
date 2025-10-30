@@ -1,10 +1,54 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber", "letber\letber.csproj", "{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber.grpc.backend", "letber.grpc.backend\letber.grpc.backend.csproj", "{53ABD0DD-CC48-4377-B281-54CD4D3A42D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarmUp", "WarmUp\WarmUp.csproj", "{D0D06893-C97F-4522-8E8C-B616A9D9E756}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarmUpTest", "WarmUpTest\WarmUpTest.csproj", "{B3A4D912-4973-48DA-A21A-A8D56ED29731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber.lib", "letber.lib\letber.lib.csproj", "{4EB966B1-6C40-4A8A-99CA-D3C880D2C8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber.UnitTests", "letber.UnitTests\letber.UnitTests.csproj", "{F922E91C-4B23-4B6C-A89A-EB6322B5C8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber.IntegrationTests", "letber.IntegrationTests\letber.IntegrationTests.csproj", "{00D20D2D-2672-4532-AABE-BE9650088410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber.SystemTests", "letber.SystemTests\letber.SystemTests.csproj", "{22FF5CCD-C174-4F00-A174-6EF123873907}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A7914E8E-DD9A-48DC-BA67-4987D20D24EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{4A3B709D-C59C-4BCC-AEF4-2BF38B953458}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{2DCEDFAF-5B36-47B0-BF62-CB2A14993898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letber.client", "letber.client\letber.client.csproj", "{887E6C97-F932-4730-8AC2-5B962F5864D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{0EE88E9A-D751-41F8-84ED-928EE62D2FF0}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{F4625CBE-2B42-4DDD-9E17-ACBFCDBA464C}"
+	ProjectSection(SolutionItems) = preProject
+		dvdrental\3067.dat = dvdrental\3067.dat
+		dvdrental\3071.dat = dvdrental\3071.dat
+		dvdrental\3077.dat = dvdrental\3077.dat
+		dvdrental\3079.dat = dvdrental\3079.dat
+		dvdrental\3062.dat = dvdrental\3062.dat
+		dvdrental\3081.dat = dvdrental\3081.dat
+		dvdrental\restore.sql = dvdrental\restore.sql
+		dvdrental\3063.dat = dvdrental\3063.dat
+		dvdrental\3073.dat = dvdrental\3073.dat
+		dvdrental\3057.dat = dvdrental\3057.dat
+		dvdrental\3075.dat = dvdrental\3075.dat
+		dvdrental\3061.dat = dvdrental\3061.dat
+		dvdrental\3069.dat = dvdrental\3069.dat
+		dvdrental\3065.dat = dvdrental\3065.dat
+		dvdrental\3059.dat = dvdrental\3059.dat
+		dvdrental\toc.dat = dvdrental\toc.dat
+		dvdrental\3055.dat = dvdrental\3055.dat
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvdRental.DB", "DvdRental.DB\DvdRental.DB.csproj", "{75FCA838-5C02-4EB0-99C9-B9FF3499B4E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +68,40 @@ Global
 		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3A4D912-4973-48DA-A21A-A8D56ED29731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB966B1-6C40-4A8A-99CA-D3C880D2C8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB966B1-6C40-4A8A-99CA-D3C880D2C8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB966B1-6C40-4A8A-99CA-D3C880D2C8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB966B1-6C40-4A8A-99CA-D3C880D2C8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F922E91C-4B23-4B6C-A89A-EB6322B5C8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F922E91C-4B23-4B6C-A89A-EB6322B5C8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F922E91C-4B23-4B6C-A89A-EB6322B5C8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F922E91C-4B23-4B6C-A89A-EB6322B5C8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D20D2D-2672-4532-AABE-BE9650088410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D20D2D-2672-4532-AABE-BE9650088410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D20D2D-2672-4532-AABE-BE9650088410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D20D2D-2672-4532-AABE-BE9650088410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FF5CCD-C174-4F00-A174-6EF123873907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FF5CCD-C174-4F00-A174-6EF123873907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FF5CCD-C174-4F00-A174-6EF123873907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FF5CCD-C174-4F00-A174-6EF123873907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887E6C97-F932-4730-8AC2-5B962F5864D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887E6C97-F932-4730-8AC2-5B962F5864D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887E6C97-F932-4730-8AC2-5B962F5864D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887E6C97-F932-4730-8AC2-5B962F5864D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75FCA838-5C02-4EB0-99C9-B9FF3499B4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FCA838-5C02-4EB0-99C9-B9FF3499B4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FCA838-5C02-4EB0-99C9-B9FF3499B4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FCA838-5C02-4EB0-99C9-B9FF3499B4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3A4D912-4973-48DA-A21A-A8D56ED29731} = {A7914E8E-DD9A-48DC-BA67-4987D20D24EB}
+		{00D20D2D-2672-4532-AABE-BE9650088410} = {A7914E8E-DD9A-48DC-BA67-4987D20D24EB}
+		{22FF5CCD-C174-4F00-A174-6EF123873907} = {A7914E8E-DD9A-48DC-BA67-4987D20D24EB}
+		{F922E91C-4B23-4B6C-A89A-EB6322B5C8EE} = {A7914E8E-DD9A-48DC-BA67-4987D20D24EB}
+		{53ABD0DD-CC48-4377-B281-54CD4D3A42D7} = {2DCEDFAF-5B36-47B0-BF62-CB2A14993898}
+		{4EB966B1-6C40-4A8A-99CA-D3C880D2C8AA} = {4A3B709D-C59C-4BCC-AEF4-2BF38B953458}
+		{D0D06893-C97F-4522-8E8C-B616A9D9E756} = {4A3B709D-C59C-4BCC-AEF4-2BF38B953458}
+		{887E6C97-F932-4730-8AC2-5B962F5864D5} = {2DCEDFAF-5B36-47B0-BF62-CB2A14993898}
+		{75FCA838-5C02-4EB0-99C9-B9FF3499B4E0} = {4A3B709D-C59C-4BCC-AEF4-2BF38B953458}
 	EndGlobalSection
 EndGlobal

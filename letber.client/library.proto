@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+option csharp_namespace = "letber";
+
+package biblio;
+
+service Library {
+  rpc MostBorrowedBooks (google.protobuf.Empty) returns (MostBorrowedBooksReply);
+  rpc MostBorrowers (MostBorrowersRequest) returns (MostBorrowersReply);
+  rpc UserReadingPace (UserRequest) returns (UserReadingPaceReply);
+  rpc BorrowingPatterns (BookIdRequest) returns (BorrowingPatternsReply);
+}
+
+message MostBorrowedBooksReply {
+  repeated BookDetails BooksDetails = 1;
+}
+
+message BorrowingPatternsReply {
+  repeated BookDetails BooksDetails = 1;
+}
+message BookDetails {
+  string BookTitle = 1;
+  int32 RentalCount = 2;
+}
+message MostBorrowersRequest {
+  google.protobuf.Timestamp FromDate = 1;
+  google.protobuf.Timestamp ToDate = 2;
+}
+
+message MostBorrowersReply {
+  repeated UserReply Users = 1;
+}
+
+message UserReply {
+  string Name = 1;
+  int32 Id = 2;
+}
+
+message UserRequest {
+  int32 Id = 1;
+}
+
+message UserReadingPaceReply {
+  int32 PagesPerDay = 1;
+}
+
+message BookIdRequest {
+  int32 Id = 1;
+}

@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DvdRental.DB\DvdRental.DB.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.71.0" />
     </ItemGroup>
 
